@@ -1,0 +1,38 @@
+img {
+    block-size: auto;
+    inline-size: 100%;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 900px) { /* normal size screens */
+    .card-container-small {
+        display: none;
+    }
+
+    .card-container-normal  {
+        display: flex;
+        flex-direction: row;
+        align-content: start;
+        display: flow-root;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px) { /* small size screens */
+    .card-container-normal {
+        display: none;
+    }
+
+    .card-container-small {
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+        display: flow-root;
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+}
